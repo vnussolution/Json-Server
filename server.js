@@ -23,6 +23,10 @@ server.use((req, res, next) => {
     }
 });
 
+server.get('/', (req, res) => {
+    res.render('Xin chao cac ban :)');
+});
+
 // Add custom routes before JSON Server router
 server.get('/echo', (req, res) => {
     res.jsonp(req.query)
