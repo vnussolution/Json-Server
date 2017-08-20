@@ -6,6 +6,8 @@ const middlewares = jsonServer.defaults();
 const path = require('path');
 const router = jsonServer.router(path.join(__dirname, 'db.json'));
 
+var port = process.env.PORT || 1337;
+
 // Set default middlewares (logger, static, cors and no-cache)
 server.use(middlewares);
 
@@ -45,7 +47,7 @@ server.use((req, res, next) => {
 
 // Use default router
 server.use(router)
-server.listen(3000, () => {
+server.listen(port, () => {
     console.log('JSON Server is running')
 })
 
