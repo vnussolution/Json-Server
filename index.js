@@ -26,13 +26,15 @@ server.use((req, res, next) => {
 });
 
 server.get('/xinchao', (req, res) => {
-    res.render('Xin chao cac ban :)');
+    res.writeHead(200, { "Content-Type": "text/plain" });
+    res.end("Hello World! ");
 });
 
 
-server.get('/', (req, res) => {
-    res.render('Xin chao cac ban :)');
-});
+
+// server.get('/', (req, res) => {
+//     res.render('Xin chao cac ban :)');
+// });
 
 // Add custom routes before JSON Server router
 server.get('/echo', (req, res) => {
