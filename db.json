@@ -1,0 +1,83 @@
+{
+    "records": [
+        {
+            "id": "1",
+            "amount": "51",
+            "tip": "22",
+            "cash": "11",
+            "date": ""
+        }
+    ],
+    "companies": [
+        {
+            "id": "1",
+            "name": "Island",
+            "description": "Spa & Nail Salon"
+        }
+    ],
+    "employees": [
+        {
+            "id": "1",
+            "firstName": "John",
+            "lastName": "Doe",
+            "email": "John@nailIsland.com",
+            "age": 34,
+            "companyId": "1",
+            "level": "5"
+        },
+        {
+            "id": "2",
+            "firstName": "Grace",
+            "lastName": "Doe",
+            "email": "John@nailIsland.com",
+            "age": 34,
+            "companyId": "1",
+            "level": "1"
+        },
+        {
+            "id": "3",
+            "firstName": "Tommy",
+            "lastName": "Doe",
+            "email": "John@nailIsland.com",
+            "age": 34,
+            "companyId": "1",
+            "level": "1"
+        },
+        {
+            "id": "4",
+            "firstName": "Tiffy",
+            "lastName": "Doe",
+            "email": "John@nailIsland.com",
+            "age": 34,
+            "companyId": "1",
+            "level": "1"
+        },
+        {
+            "id": "5",
+            "firstName": "Robin",
+            "lastName": "Doe",
+            "email": "John@nailIsland.com",
+            "age": 34,
+            "companyId": "1",
+            "level": "1"
+        },
+        {
+            "id": "6",
+            "firstName": "Willon",
+            "lastName": "Doe",
+            "email": "John@nailIsland.com",
+            "age": 34,
+            "companyId": "1",
+            "level": "1"
+        },
+        {
+            "id": "7",
+            "firstName": "Yummy",
+            "lastName": "Doe",
+            "email": "John@nailIsland.com",
+            "age": 34,
+            "companyId": "1",
+            "level": "1"
+        }
+    ]
+}
