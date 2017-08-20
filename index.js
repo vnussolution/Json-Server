@@ -6,7 +6,7 @@ const middlewares = jsonServer.defaults();
 const path = require('path');
 const router = jsonServer.router(path.join(__dirname, 'db.json'));
 
-var port = process.env.PORT || 1337;
+var port = process.env.PORT || 1338;
 
 // Set default middlewares (logger, static, cors and no-cache)
 server.use(middlewares);
@@ -21,9 +21,14 @@ server.use((req, res, next) => {
     if (isAuthorized(req)) { // add your authorization logic here
         next() // continue to JSON Server router
     } else {
-        res.sendStatus(401)
+        res.sendStatus(401);
     }
 });
+
+server.get('/xinchao', (req, res) => {
+    res.render('Xin chao cac ban :)');
+});
+
 
 server.get('/', (req, res) => {
     res.render('Xin chao cac ban :)');
@@ -31,7 +36,7 @@ server.get('/', (req, res) => {
 
 // Add custom routes before JSON Server router
 server.get('/echo', (req, res) => {
-    res.jsonp(req.query)
+    res.jsonp(req.query);
 })
 
 // To handle POST, PUT and PATCH you need to use a body-parser
@@ -39,15 +44,15 @@ server.get('/echo', (req, res) => {
 server.use(jsonServer.bodyParser)
 server.use((req, res, next) => {
     if (req.method === 'POST') {
-        req.body.createdAt = Date.now()
+        req.body.createdAt = Date.now();
     }
     // Continue to JSON Server router
     next()
 })
 
 // Use default router
-server.use(router)
+server.use(router);
 server.listen(port, () => {
-    console.log('JSON Server is running')
+    console.log('JSON Server is running');
 })
 
