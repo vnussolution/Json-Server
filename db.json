@@ -5,7 +5,24 @@
             "amount": "51",
             "tip": "22",
             "discount": "11",
-            "date": ""
+            "date": "",
+            "employeeId": "1"
+        },
+        {
+            "id": "2",
+            "amount": "51",
+            "tip": "22",
+            "discount": "11",
+            "date": "",
+            "employeeId": "1"
+        },
+        {
+            "id": "3",
+            "amount": "51",
+            "tip": "22",
+            "discount": "11",
+            "date": "",
+            "employeeId": "1"
         }
     ],
     "companies": [
